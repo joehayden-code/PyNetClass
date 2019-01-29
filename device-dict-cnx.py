@@ -41,4 +41,11 @@ for cxn in deviceList:
           output = net_connect.send_command("show version")
           print (output)
 
+          with open('show_version.txt','w') as f:
+               f.write(output)
+
+     #disconnect
+     net_connect.disconnect()
+
+
 
