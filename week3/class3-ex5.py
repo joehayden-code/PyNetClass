@@ -8,11 +8,10 @@ infile = input("Where is your device list:  ")
 with open(infile) as f:
     device_list = yaml.load(f)
 
-pprint(device_list)
+device = device_list['cisco3']
 
-
-
-
-
+net_connect = ConnectHandler(**device)
+print(net_connect.find_prompt())
+net_connect.disconnect()
 
 
