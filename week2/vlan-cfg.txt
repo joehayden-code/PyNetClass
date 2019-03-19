@@ -1,0 +1,11 @@
+vlan 10
+name SERVER-VLAN
+vlan 20
+name STORAGE-VLAN
+vlan 30
+name MANAGEMENT-VLAN
+vlan 40
+name B2B-VLAN
+vlan 50
+name OTHER-VLAN
+
